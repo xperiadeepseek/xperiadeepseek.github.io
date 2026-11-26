@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>constituional law</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0"
+    rel="stylesheet"
+  />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px 18px 110px;
+      background-color: #faf9f6;
+      color: #1a1a1a;
+      font-family: "Noto Sans Devanagari", "Nirmala UI", "Kohinoor Devanagari", sans-serif;
+      overflow-x: clip;
+    }
+
+    .top-bar {
+      max-width: 720px;
+      margin: 0 auto 14px;
+    }
+
+    .back-link {
+      display: inline-block;
+      color: #2563eb;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .reader-container {
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: 20px;
+      line-height: 1.85;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .reader-container h1 {
+      font-size: 1.35em;
+      line-height: 1.5;
+      margin-top: 0;
+      margin-bottom: 0.9em;
+      color: #111827;
+    }
+
+    .qa-item {
+      padding: 0.8em 0.9em;
+      margin-bottom: 0.9em;
+      background-color: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    }
+
+    .qa-item p {
+      margin: 0;
+    }
+
+    .qa-item .question {
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 0.45em;
+    }
+
+    .qa-item .answer {
+      color: #1f2937;
+    }
+
+    .qa-label {
+      display: inline-block;
+      margin-right: 0.3em;
+      font-weight: 700;
+    }
+
+    .q-label {
+      color: #1d4ed8;
+    }
+
+    .a-label {
+      color: #047857;
+    }
+
+    .floating-tray {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 10px 18px;
+      background-color: #1f2937;
+      border-radius: 999px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      z-index: 1000;
+    }
+
+    .tray-btn {
+      width: 50px;
+      height: 50px;
+      border: none;
+      border-radius: 50%;
+      background-color: #374151;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      touch-action: manipulation;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .tray-btn:active {
+      transform: scale(0.94);
+    }
+
+    .tray-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .tray-btn.play-btn {
+      background-color: #2563eb;
+      width: 56px;
+      height: 56px;
+    }
+
+    .tray-btn.play-btn.playing {
+      background-color: #dc2626;
+    }
+
+    .material-symbols-outlined {
+      font-size: 28px;
+      user-select: none;
+    }
+
+    .status-toast {
+      position: fixed;
+      bottom: 96px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(17, 24, 39, 0.92);
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: system-ui, sans-serif;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+      max-width: 90vw;
+      text-align: center;
+      z-index: 1001;
+    }
+
+    .status-toast.visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <a class="back-link" href="index.html">← सभी अध्याय</a>
+  </div>
+
+  <main id="textContainer" class="reader-container">
+    <h1>constituional law</h1>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>भारतीय संविधान की प्रकृति के संदर्भ में प्रो. के. सी. व्हीयर (K.C. Wheare) का क्या मत है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>प्रो. के. सी. व्हीयर ने भारतीय संविधान को &#x27;अर्द्ध-संघात्मक&#x27; (Quasi-Federal) कहा है, क्योंकि इसमें संघात्मक और एकात्मक दोनों प्रकार की विशेषताएं पाई जाती हैं।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>भारतीय संविधान की प्रमुख संघात्मक (Federal) विशेषताएं कौन-कौन सी हैं?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>संविधान की सर्वोच्चता, शक्तियों का विभाजन (सातवीं अनुसूची), लिखित एवं कठोर संविधान, और स्वतंत्र न्यायपालिका भारतीय संविधान की प्रमुख संघात्मक विशेषताएं हैं।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>भारतीय संविधान की प्रमुख एकात्मक (Unitary) विशेषताएं कौन-कौन सी हैं?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>एकल नागरिकता, आपातकालीन उपबंध, राज्यपाल की नियुक्ति, अखिल भारतीय सेवाएं और एकीकृत न्यायपालिका भारतीय संविधान की प्रमुख एकात्मक विशेषताएं हैं।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>एस. आर. बोम्मई बनाम भारत संघ (1994) के मामले में उच्चतम न्यायालय ने भारतीय संघवाद के बारे में क्या कहा?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>उच्चतम न्यायालय ने इस मामले में निर्णय दिया कि &#x27;संघवाद&#x27; (Federalism) भारतीय संविधान के मूल ढांचे (Basic Structure) का एक अभिन्न अंग है।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>भारतीय संविधान के अनुच्छेद 1 में भारत को किस रूप में वर्णित किया गया है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>अनुच्छेद 1 के अनुसार, &#x27;भारत, अर्थात इंडिया, राज्यों का संघ (Union of States) होगा&#x27;। डॉ. बी. आर. अम्बेडकर के अनुसार इसका अर्थ है कि भारतीय संघ राज्यों के बीच किसी समझौते का परिणाम नहीं है और न ही राज्यों को संघ से अलग होने का अधिकार है।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>भारतीय संविधान में &#x27;सहकारी संघवाद&#x27; (Cooperative Federalism) से क्या तात्पर्य है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>सहकारी संघवाद का अर्थ है कि केंद्र और राज्य सरकारें एक-दूसरे के प्रतिस्पर्धी नहीं बल्कि सहयोगी के रूप में कार्य करें। ग्रैनविल ऑस्टिन ने भारतीय संघवाद को सहकारी संघवाद कहा है।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>संविधान की सातवीं अनुसूची में शक्तियों का विभाजन किस प्रकार किया गया है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>सातवीं अनुसूची में तीन सूचियां हैं: संघ सूची (केंद्र कानून बनाता है), राज्य सूची (राज्य कानून बनाते हैं), और समवर्ती सूची (दोनों कानून बना सकते हैं, परंतु विरोध होने पर केंद्र का कानून मान्य होता है)।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>भारतीय संविधान को &#x27;कठोर और लचीलेपन का मिश्रण&#x27; क्यों कहा जाता है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>क्योंकि इसके कुछ उपबंधों को संसद के साधारण बहुमत से संशोधित किया जा सकता है (लचीलापन), जबकि कुछ प्रमुख उपबंधों के लिए विशेष बहुमत और आधे राज्यों के अनुसमर्थन की आवश्यकता होती है (कठोरता)।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>भारतीय संविधान में संशोधन की शक्ति और प्रक्रिया का उल्लेख किस अनुच्छेद में किया गया है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>संविधान के भाग 20 के अनुच्छेद 368 में संसद की संविधान संशोधन की शक्ति और उसकी प्रक्रिया का उल्लेख किया गया है।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>अनुच्छेद 368 के अंतर्गत संविधान में संशोधन कितने प्रकार से किया जा सकता है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>अनुच्छेद 368 के तहत मुख्य रूप से दो प्रकार से संशोधन होता है: पहला, संसद के विशेष बहुमत द्वारा; और दूसरा, संसद के विशेष बहुमत तथा आधे से अधिक राज्यों के विधानमंडलों के अनुसमर्थन द्वारा। (साधारण बहुमत से होने वाले संशोधन अनुच्छेद 368 के दायरे से बाहर माने जाते हैं)।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>क्या संविधान संशोधन विधेयक को पारित करने के लिए संसद के दोनों सदनों की संयुक्त बैठक (Joint Sitting) बुलाई जा सकती है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>नहीं, संविधान संशोधन विधेयक पर गतिरोध होने की स्थिति में अनुच्छेद 108 के तहत संयुक्त बैठक बुलाने का कोई प्रावधान नहीं है। इसे दोनों सदनों से अलग-अलग पारित होना आवश्यक है।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>संविधान के &#x27;मूल ढांचे का सिद्धांत&#x27; (Doctrine of Basic Structure) किस ऐतिहासिक मामले में प्रतिपादित किया गया था?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>यह सिद्धांत केशवानंद भारती बनाम केरल राज्य (1973) के मामले में 13 न्यायाधीशों की पीठ द्वारा प्रतिपादित किया गया था। इसके अनुसार संसद संविधान में संशोधन कर सकती है, लेकिन उसके मूल ढांचे को नष्ट नहीं कर सकती।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>गोलकनाथ बनाम पंजाब राज्य (1967) के मामले में उच्चतम न्यायालय ने क्या निर्णय दिया था?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>इस मामले में न्यायालय ने निर्णय दिया था कि संसद अनुच्छेद 368 के तहत मौलिक अधिकारों में संशोधन या कटौती नहीं कर सकती, क्योंकि संविधान संशोधन भी अनुच्छेद 13(2) के अंतर्गत &#x27;विधि&#x27; (Law) है।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>24वें संविधान संशोधन अधिनियम, 1971 का मुख्य उद्देश्य क्या था?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>इसका मुख्य उद्देश्य गोलकनाथ मामले के प्रभाव को समाप्त करना था। इसके द्वारा यह स्पष्ट किया गया कि अनुच्छेद 368 के तहत किया गया संशोधन अनुच्छेद 13 के अंतर्गत &#x27;विधि&#x27; नहीं है, और राष्ट्रपति के लिए संविधान संशोधन विधेयक पर अपनी सहमति देना अनिवार्य कर दिया गया।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>मिनर्वा मिल्स बनाम भारत संघ (1980) के मामले में अनुच्छेद 368 के संदर्भ में क्या निर्णय दिया गया?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>न्यायालय ने 42वें संशोधन द्वारा जोड़े गए अनुच्छेद 368(4) और (5) को असंवैधानिक घोषित कर दिया और कहा कि &#x27;सीमित संशोधन शक्ति&#x27; (Limited Amending Power) और &#x27;न्यायिक पुनर्विलोकन&#x27; (Judicial Review) संविधान के मूल ढांचे का हिस्सा हैं।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>भारतीय संविधान के अनुच्छेद 12 के अंतर्गत &#x27;राज्य&#x27; (State) की परिभाषा में कौन-कौन शामिल हैं?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>अनुच्छेद 12 के अंतर्गत राज्य में शामिल हैं: भारत की सरकार और संसद, प्रत्येक राज्य की सरकार और विधानमंडल, तथा भारत के राज्यक्षेत्र के भीतर या भारत सरकार के नियंत्रण के अधीन सभी स्थानीय और अन्य प्राधिकारी (Local and Other Authorities)।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>अनुच्छेद 12 में प्रयुक्त शब्द &#x27;अन्य प्राधिकारी&#x27; (Other Authorities) को निर्धारित करने के लिए किस प्रमुख मामले में कसौटियां (Tests) तय की गईं?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>आर. डी. शेट्टी बनाम इंटरनेशनल एयरपोर्ट अथॉरिटी (1979) और अजय हासिया बनाम खालिद मुजीब (1981) के मामलों में यह निर्धारित करने के लिए कसौटियां तय की गईं कि कोई निकाय &#x27;राज्य का अभिकरण या साधन&#x27; (Instrumentality or Agency of State) है या नहीं।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>क्या न्यायपालिका अनुच्छेद 12 के अंतर्गत &#x27;राज्य&#x27; की परिभाषा में आती है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>नरेश श्रीधर मिराजकर बनाम महाराष्ट्र राज्य (1967) के मामले के अनुसार, जब न्यायपालिका अपने न्यायिक कार्यों का निर्वहन करती है तो वह &#x27;राज्य&#x27; नहीं है, लेकिन जब वह प्रशासनिक या नियम बनाने वाले कार्य करती है तो वह अनुच्छेद 12 के अंतर्गत &#x27;राज्य&#x27; मानी जाती है।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>अनुच्छेद 14 में उल्लिखित &#x27;विधि के समक्ष समता&#x27; (Equality before Law) और &#x27;विधियों का समान संरक्षण&#x27; (Equal Protection of Laws) में क्या अंतर है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>&#x27;विधि के समक्ष समता&#x27; एक नकारात्मक अवधारणा है जो ब्रिटेन से ली गई है, इसका अर्थ है किसी को विशेषाधिकार न होना। &#x27;विधियों का समान संरक्षण&#x27; एक सकारात्मक अवधारणा है जो अमेरिका से ली गई है, इसका अर्थ है समान परिस्थितियों में समान व्यवहार।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>अनुच्छेद 14 के अंतर्गत &#x27;युक्तियुक्त वर्गीकरण&#x27; (Reasonable Classification) की दो आवश्यक शर्तें क्या हैं?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>पहली, वर्गीकरण &#x27;बोधगम्य अंतर&#x27; (Intelligible Differentia) पर आधारित होना चाहिए; और दूसरी, उस अंतर का अधिनियम के उद्देश्य के साथ एक &#x27;तर्कसंगत संबंध&#x27; (Rational Nexus) होना चाहिए।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>ई. पी. रोयप्पा बनाम तमिलनाडु राज्य (1974) के मामले में अनुच्छेद 14 की क्या नई व्याख्या की गई?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>इस मामले में &#x27;मनमानेपन का सिद्धांत&#x27; (Doctrine of Arbitrariness) प्रतिपादित किया गया। न्यायालय ने कहा कि समता एक गतिशील अवधारणा है और जो भी कार्य मनमाना (Arbitrary) है, वह अनुच्छेद 14 का उल्लंघन है।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>अनुच्छेद 15 किन पांच आधारों पर राज्य द्वारा किसी नागरिक के विरुद्ध विभेद (Discrimination) को प्रतिषिद्ध करता है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>अनुच्छेद 15(1) के अनुसार राज्य किसी नागरिक के विरुद्ध केवल धर्म, मूलवंश, जाति, लिंग, जन्मस्थान या इनमें से किसी के आधार पर कोई विभेद नहीं करेगा।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>अनुच्छेद 16(4) और इंदिरा साहनी बनाम भारत संघ (1992) के मामले का मुख्य निष्कर्ष क्या है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>अनुच्छेद 16(4) पिछड़े वर्गों के लिए लोक नियोजन में आरक्षण का प्रावधान करता है। इंदिरा साहनी मामले में न्यायालय ने 27% ओबीसी आरक्षण को वैध ठहराया, आरक्षण की अधिकतम सीमा 50% तय की, और &#x27;क्रीमी लेयर&#x27; (Creamy Layer) को आरक्षण से बाहर रखने का निर्देश दिया।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>अनुच्छेद 19(1) के अंतर्गत भारतीय नागरिकों को वर्तमान में कितनी मूल स्वतंत्रताएं प्राप्त हैं?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>वर्तमान में 6 मूल स्वतंत्रताएं प्राप्त हैं: (क) वाक् एवं अभिव्यक्ति, (ख) शांतिपूर्ण सम्मेलन, (ग) संगम या संघ बनाने, (घ) भारत में सर्वत्र अबाध संचरण, (ङ) भारत के किसी भाग में निवास करने, और (छ) कोई वृत्ति, व्यापार या कारोबार करने की स्वतंत्रता। (संपत्ति के अधिकार 19(1)(च) को 44वें संशोधन द्वारा हटा दिया गया था)।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>अनुच्छेद 19(1)(क) के तहत वाक् एवं अभिव्यक्ति की स्वतंत्रता पर अनुच्छेद 19(2) के अंतर्गत किन आधारों पर युक्तियुक्त निर्बंधन (Reasonable Restrictions) लगाए जा सकते हैं?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>भारत की प्रभुता और अखंडता, राज्य की सुरक्षा, विदेशी राज्यों के साथ मैत्रीपूर्ण संबंध, लोक व्यवस्था, शिष्टाचार या सदाचार, न्यायालय अवमान, मानहानि, या अपराध-उद्दीपन के आधार पर निर्बंधन लगाए जा सकते हैं।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>क्या &#x27;प्रेस की स्वतंत्रता&#x27; (Freedom of Press) अनुच्छेद 19(1)(क) में निहित है? इससे संबंधित प्रमुख मामला कौन सा है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>हां, प्रेस की स्वतंत्रता अनुच्छेद 19(1)(क) के अंतर्गत वाक् एवं अभिव्यक्ति की स्वतंत्रता में निहित है। रोमेश थापर बनाम मद्रास राज्य (1950) और बेनेट कोलमैन बनाम भारत संघ (1973) इसके प्रमुख मामले हैं।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>श्रेया सिंघल बनाम भारत संघ (2015) का मामला अनुच्छेद 19 से किस प्रकार संबंधित है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>इस मामले में उच्चतम न्यायालय ने सूचना प्रौद्योगिकी अधिनियम की धारा 66A को अनुच्छेद 19(1)(क) का उल्लंघन मानते हुए असंवैधानिक घोषित कर दिया, क्योंकि यह अस्पष्ट थी और इंटरनेट पर अभिव्यक्ति की स्वतंत्रता पर अनुचित प्रतिबंध लगाती थी।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>अनुच्छेद 25 के अंतर्गत धार्मिक स्वतंत्रता के अधिकार पर किन आधारों पर प्रतिबंध लगाया जा सकता है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>अनुच्छेद 25(1) के तहत अंतःकरण की स्वतंत्रता और धर्म के अबाध रूप से मानने, आचरण और प्रचार करने का अधिकार लोक व्यवस्था (Public Order), सदाचार (Morality) और स्वास्थ्य (Health) तथा भाग 3 के अन्य उपबंधों के अधीन है।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>धर्म की स्वतंत्रता के संदर्भ में &#x27;अनिवार्य धार्मिक प्रथा का सिद्धांत&#x27; (Doctrine of Essential Religious Practice) किस मामले में विकसित हुआ?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>यह सिद्धांत शिरूर मठ मामले (Commissioner, HRE vs. Sri Lakshmindra Thirtha Swamiar, 1954) में विकसित हुआ। इसके अनुसार केवल वे प्रथाएं ही अनुच्छेद 25 और 26 के तहत संरक्षित हैं जो किसी धर्म का अनिवार्य और अभिन्न अंग हैं।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>अनुच्छेद 28 के अंतर्गत किन शिक्षण संस्थाओं में धार्मिक शिक्षा (Religious Instruction) देने पर पूर्ण प्रतिबंध है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>अनुच्छेद 28(1) के अनुसार, राज्य निधि से पूर्णतः पोषित किसी भी शिक्षा संस्था में कोई भी धार्मिक शिक्षा नहीं दी जाएगी।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>संविधान के अनुच्छेद 29 और अनुच्छेद 30 में अल्पसंख्यकों (Minorities) को कौन से अधिकार दिए गए हैं?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>अनुच्छेद 29 नागरिकों के किसी भी वर्ग को अपनी विशेष भाषा, लिपि या संस्कृति को बनाए रखने का अधिकार देता है। अनुच्छेद 30 धर्म या भाषा पर आधारित सभी अल्पसंख्यक वर्गों को अपनी रुचि की शिक्षा संस्थाओं की स्थापना और प्रशासन का अधिकार देता है।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>ए. के. गोपालन बनाम मद्रास राज्य (1950) और मेनका गांधी बनाम भारत संघ (1978) के मामलों में अनुच्छेद 21 की व्याख्या में क्या बड़ा बदलाव आया?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>ए. के. गोपालन मामले में न्यायालय ने अनुच्छेद 21 की संकीर्ण व्याख्या की थी। मेनका गांधी मामले में इसे पलट दिया गया और कहा गया कि &#x27;विधि द्वारा स्थापित प्रक्रिया&#x27; (Procedure Established by Law) मात्र कोई भी प्रक्रिया नहीं, बल्कि &#x27;ऋजु, न्यायसंगत और युक्तियुक्त&#x27; (Fair, Just and Reasonable) होनी चाहिए।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>अनुच्छेद 21 के अंतर्गत &#x27;प्राण और दैहिक स्वतंत्रता&#x27; में न्यायपालिका द्वारा जोड़े गए कुछ प्रमुख अंतर्निहित अधिकार कौन से हैं?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>इसमें गरिमा के साथ जीने का अधिकार, निजता का अधिकार (के. एस. पुट्टास्वामी मामला), स्वच्छ पर्यावरण का अधिकार, त्वरित विचारण (Speedy Trial) का अधिकार, और निःशुल्क विधिक सहायता का अधिकार शामिल हैं।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>कॉमन कॉज बनाम भारत संघ (2018) के मामले में अनुच्छेद 21 के संदर्भ में क्या निर्णय दिया गया?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>उच्चतम न्यायालय ने निर्णय दिया कि गरिमा के साथ मरने का अधिकार (Right to die with dignity) अनुच्छेद 21 के अंतर्गत जीने के अधिकार का हिस्सा है, और इसने निष्क्रिय इच्छामृत्यु (Passive Euthanasia) तथा &#x27;लिविंग विल&#x27; (Living Will) को वैधता प्रदान की।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>अनुच्छेद 22(1) और 22(2) के अंतर्गत गिरफ्तार किए गए व्यक्ति को कौन से संवैधानिक अधिकार प्राप्त हैं?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>गिरफ्तार व्यक्ति को गिरफ्तारी के कारणों को जानने का अधिकार, अपनी रुचि के वकील से परामर्श करने का अधिकार, और गिरफ्तारी के 24 घंटे के भीतर (यात्रा समय को छोड़कर) निकटतम मजिस्ट्रेट के समक्ष पेश किए जाने का अधिकार है।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>क्या अनुच्छेद 22(1) और 22(2) के अधिकार निवारक निरोध (Preventive Detention) के तहत गिरफ्तार व्यक्ति को प्राप्त होते हैं?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>नहीं, अनुच्छेद 22(3) के अनुसार ये अधिकार शत्रु अन्यदेशीय (Enemy Alien) और निवारक निरोध विधि के अधीन गिरफ्तार किए गए व्यक्तियों पर लागू नहीं होते हैं।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>निवारक निरोध (Preventive Detention) के संबंध में अनुच्छेद 22(4) क्या सुरक्षा प्रदान करता है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>अनुच्छेद 22(4) के अनुसार, निवारक निरोध का उपबंध करने वाली कोई भी विधि किसी व्यक्ति को 3 माह से अधिक अवधि के लिए निरुद्ध रखने की अनुमति नहीं देगी, जब तक कि एक सलाहकार बोर्ड (Advisory Board) इसके लिए पर्याप्त कारण न बता दे।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>मौलिक अधिकारों (भाग 3) और राज्य के नीति निदेशक तत्वों (भाग 4) के बीच मुख्य अंतर क्या है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>मौलिक अधिकार न्यायालय द्वारा प्रवर्तनीय (Justiciable) हैं और मुख्यतः राज्य पर नकारात्मक प्रतिबंध लगाते हैं, जबकि नीति निदेशक तत्व गैर-प्रवर्तनीय (Non-Justiciable) हैं और कल्याणकारी राज्य की स्थापना के लिए राज्य को सकारात्मक निर्देश देते हैं।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>चंपकम दोराईराजन बनाम मद्रास राज्य (1951) के मामले में मौलिक अधिकारों और नीति निदेशक तत्वों के संबंध के बारे में क्या कहा गया था?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>इस मामले में उच्चतम न्यायालय ने कहा था कि मौलिक अधिकार और नीति निदेशक तत्वों के बीच टकराव होने पर मौलिक अधिकार ही प्रभावी होंगे, क्योंकि नीति निदेशक तत्वों को मौलिक अधिकारों के अधीन रहकर ही कार्य करना होगा।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>&#x27;सामंजस्यपूर्ण अर्थान्वयन का सिद्धांत&#x27; (Doctrine of Harmonious Construction) मौलिक अधिकारों और नीति निदेशक तत्वों पर कैसे लागू होता है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>मिनर्वा मिल्स बनाम भारत संघ (1980) के मामले में न्यायालय ने कहा कि भारतीय संविधान भाग 3 और भाग 4 के संतुलन की आधारशिला पर टिका है। दोनों एक-दूसरे के पूरक हैं और न्यायालय को दोनों के बीच सामंजस्य स्थापित करने का प्रयास करना चाहिए।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>42वें संविधान संशोधन अधिनियम, 1976 द्वारा अनुच्छेद 31C में क्या परिवर्तन किया गया था और मिनर्वा मिल्स मामले में उसका क्या हुआ?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>42वें संशोधन ने सभी नीति निदेशक तत्वों को अनुच्छेद 14 और 19 के मौलिक अधिकारों पर वरीयता दे दी थी। मिनर्वा मिल्स मामले में न्यायालय ने इस विस्तार को असंवैधानिक घोषित कर दिया और केवल अनुच्छेद 39(ख) और 39(ग) को ही वरीयता की सीमा तक वैध रखा।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>संविधान के अंतर्गत &#x27;न्यायिक पुनर्विलोकन&#x27; (Judicial Review) से क्या तात्पर्य है और इसका आधार किस अनुच्छेद में मिलता है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>न्यायिक पुनर्विलोकन न्यायपालिका की वह शक्ति है जिसके द्वारा वह विधायिका के कानूनों और कार्यपालिका के आदेशों की संवैधानिकता की जांच करती है और संविधान के विरुद्ध होने पर उन्हें शून्य घोषित कर सकती है। इसका मुख्य आधार अनुच्छेद 13, 32 और 226 में मिलता है।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>&#x27;आच्छादन का सिद्धांत&#x27; (Doctrine of Eclipse) और &#x27;पृथक्करणीयता का सिद्धांत&#x27; (Doctrine of Severability) किस अनुच्छेद से संबंधित हैं?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>ये दोनों सिद्धांत अनुच्छेद 13 से संबंधित हैं। पृथक्करणीयता के अनुसार यदि किसी कानून का केवल एक भाग असंवैधानिक है, तो केवल उसी भाग को शून्य किया जाएगा। आच्छादन के अनुसार संविधान-पूर्व की कोई विधि जो मौलिक अधिकारों से असंगत है, वह मृत नहीं होती बल्कि मौलिक अधिकारों द्वारा ढक (ग्रहण लगना) जाती है।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>भारतीय न्यायिक प्रक्रिया में &#x27;न्यायिक सक्रियता&#x27; (Judicial Activism) और &#x27;लोकहित वाद&#x27; (PIL) का क्या महत्व है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>न्यायिक सक्रियता के तहत न्यायपालिका नागरिकों के अधिकारों की रक्षा के लिए सक्रिय भूमिका निभाती है। लोकहित वाद (PIL) ने &#x27;अधिकारिता के नियम&#x27; (Locus Standi) को शिथिल कर दिया है, जिससे कोई भी जन-भावना वाला व्यक्ति गरीबों या वंचितों के मौलिक अधिकारों के लिए सीधे न्यायालय जा सकता है।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>डॉ. बी. आर. अम्बेडकर ने संविधान के किस अनुच्छेद को &#x27;संविधान का हृदय और आत्मा&#x27; (Heart and Soul of the Constitution) कहा है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>डॉ. बी. आर. अम्बेडकर ने अनुच्छेद 32 (संवैधानिक उपचारों का अधिकार) को संविधान का हृदय और आत्मा कहा है, क्योंकि इसके बिना अन्य सभी मौलिक अधिकार निरर्थक हो जाएंगे।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>अनुच्छेद 32 के अंतर्गत उच्चतम न्यायालय कितने प्रकार की रिट (Writs) जारी कर सकता है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>अनुच्छेद 32(2) के अंतर्गत उच्चतम न्यायालय पांच प्रकार की रिट जारी कर सकता है: बंदी प्रत्यक्षीकरण (Habeas Corpus), परमादेश (Mandamus), प्रतिषेध (Prohibition), उत्प्रेषण (Certiorari), और अधिकार पृच्छा (Quo Warranto)।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>&#x27;बंदी प्रत्यक्षीकरण&#x27; (Habeas Corpus) रिट का क्या अर्थ है और यह किसके विरुद्ध जारी की जा सकती है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>बंदी प्रत्यक्षीकरण का शाब्दिक अर्थ है &#x27;शरीर को प्रस्तुत करना&#x27;। यह अवैध रूप से निरुद्ध किए गए व्यक्ति को स्वतंत्र कराने के लिए जारी की जाती है। यह लोक प्राधिकारियों और निजी व्यक्तियों दोनों के विरुद्ध जारी की जा सकती है।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>&#x27;प्रतिषेध&#x27; (Prohibition) और &#x27;उत्प्रेषण&#x27; (Certiorari) रिट में क्या मुख्य अंतर है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>दोनों ही रिट वरिष्ठ न्यायालय द्वारा अधीनस्थ न्यायालयों या न्यायाधिकरणों के विरुद्ध अधिकारिता के उल्लंघन पर जारी की जाती हैं। अंतर यह है कि प्रतिषेध कार्यवाही चलने के दौरान उसे रोकने के लिए जारी की जाती है, जबकि उत्प्रेषण निर्णय आने के बाद उस आदेश को रद्द करने के लिए जारी की जाती है।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>&#x27;अधिकार पृच्छा&#x27; (Quo Warranto) रिट कब और क्यों जारी की जाती है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>अधिकार पृच्छा का अर्थ है &#x27;आपका अधिकार क्या है&#x27;। यह किसी ऐसे व्यक्ति के विरुद्ध जारी की जाती है जिसने किसी सार्वजनिक पद (Public Office) को अवैध रूप से धारण कर लिया है। इसके द्वारा न्यायालय उस व्यक्ति से पद धारण करने का वैध आधार पूछता है।</p>
+    </section>
+    <section class="qa-item">
+      <p class="question"><span class="qa-label q-label">Q:</span>उच्चतम न्यायालय की रिट अधिकारिता (अनुच्छेद 32) और उच्च न्यायालय की रिट अधिकारिता (अनुच्छेद 226) में क्या मुख्य अंतर है?</p>
+      <p class="answer"><span class="qa-label a-label">A:</span>अनुच्छेद 32 के तहत उच्चतम न्यायालय केवल मौलिक अधिकारों के उल्लंघन पर ही रिट जारी कर सकता है और यह स्वयं एक मौलिक अधिकार है। जबकि अनुच्छेद 226 के तहत उच्च न्यायालय मौलिक अधिकारों के साथ-साथ &#x27;अन्य किसी विधिक उद्देश्य&#x27; के लिए भी रिट जारी कर सकता है, इसलिए अनुच्छेद 226 का क्षेत्र अधिक व्यापक है।</p>
+    </section>
+  </main>
+
+  <audio id="audioPlayer" preload="auto"></audio>
+  <div id="statusToast" class="status-toast" role="status" aria-live="polite"></div>
+
+  <nav class="floating-tray" aria-label="Reader controls">
+    <button id="zoomInBtn" class="tray-btn" type="button" aria-label="Zoom in" title="Zoom In">
+      <span class="material-symbols-outlined">zoom_in</span>
+    </button>
+
+    <button id="playBtn" class="tray-btn play-btn" type="button" aria-label="Play audio" title="Play / Pause Audio">
+      <span id="playIcon" class="material-symbols-outlined">mic</span>
+    </button>
+
+    <button id="zoomOutBtn" class="tray-btn" type="button" aria-label="Zoom out" title="Zoom Out">
+      <span class="material-symbols-outlined">zoom_out</span>
+    </button>
+  </nav>
+
+  <script>
+    const textContainer = document.getElementById("textContainer");
+    const zoomInBtn = document.getElementById("zoomInBtn");
+    const zoomOutBtn = document.getElementById("zoomOutBtn");
+    const playBtn = document.getElementById("playBtn");
+    const playIcon = document.getElementById("playIcon");
+    const audioPlayer = document.getElementById("audioPlayer");
+    const statusToast = document.getElementById("statusToast");
+
+    function getMatchingAudioPath() {
+      const pathSegment = window.location.pathname.split("/").pop();
+      const rawFileName = pathSegment && pathSegment.trim() !== "" ? pathSegment : "index.html";
+      const decodedName = decodeURIComponent(rawFileName);
+      const baseName = decodedName.replace(/\.[^/.]+$/, "");
+      return `music/${encodeURIComponent(baseName)}.mp3`;
+    }
+
+    const audioPath = getMatchingAudioPath();
+    audioPlayer.src = audioPath;
+
+    let currentFontSize = 20;
+    const MIN_FONT_SIZE = 12;
+    const MAX_FONT_SIZE = 60;
+    const ZOOM_STEP = 3;
+    let toastTimer = null;
+
+    function updateFontSize() {
+      textContainer.style.fontSize = currentFontSize + "px";
+      zoomInBtn.disabled = currentFontSize >= MAX_FONT_SIZE;
+      zoomOutBtn.disabled = currentFontSize <= MIN_FONT_SIZE;
+    }
+
+    function showToast(message) {
+      statusToast.textContent = message;
+      statusToast.classList.add("visible");
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        statusToast.classList.remove("visible");
+      }, 3000);
+    }
+
+    function setPlayingState(isPlaying) {
+      playIcon.textContent = isPlaying ? "pause" : "mic";
+      playBtn.classList.toggle("playing", isPlaying);
+      playBtn.setAttribute("aria-label", isPlaying ? "Pause audio" : "Play audio");
+    }
+
+    function playSound() {
+      if (audioPlayer.paused) {
+        audioPlayer
+          .play()
+          .then(() => setPlayingState(true))
+          .catch(() => {
+            setPlayingState(false);
+            showToast(`Could not play ${decodeURIComponent(audioPath)}`);
+          });
+      } else {
+        audioPlayer.pause();
+        setPlayingState(false);
+      }
+    }
+
+    zoomInBtn.addEventListener("click", () => {
+      if (currentFontSize < MAX_FONT_SIZE) {
+        currentFontSize = Math.min(MAX_FONT_SIZE, currentFontSize + ZOOM_STEP);
+        updateFontSize();
+      }
+    });
+
+    zoomOutBtn.addEventListener("click", () => {
+      if (currentFontSize > MIN_FONT_SIZE) {
+        currentFontSize = Math.max(MIN_FONT_SIZE, currentFontSize - ZOOM_STEP);
+        updateFontSize();
+      }
+    });
+
+    playBtn.addEventListener("click", playSound);
+    audioPlayer.addEventListener("ended", () => setPlayingState(false));
+    updateFontSize();
+  </script>
+</body>
+</html>
